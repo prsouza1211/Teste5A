@@ -1,0 +1,73 @@
+<?php 
+	include('core/class/Atividade.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="main" class="container-fluid">
+	 <div id="top" class="row">
+ 		<div class="col-md-3">
+        	<h2>Atividades</h2>
+    	</div>
+ 
+	    <div class="col-md-9">
+	       <div class="input-group h3">
+		        <label for="status">Status:</label><select id="status"></select> &nbsp;
+		        <label for="situacao">Situação:</label><select id="situacao"></select> &nbsp;
+		        <button type="button" class="btn btn-primary btn-sm">Search</button>
+		    </div>
+	    </div>
+ 
+	 </div> <!-- /#top -->
+ 
+     <hr />
+     <div id="list" class="row">
+     	<div class="table-responsive col-md-12">
+	        <table class="table table-striped" cellspacing="0" cellpadding="0">
+	            <thead>
+	                <tr>
+	                    <th>ID</th>
+	                    <th>Header 1</th>
+	                    <th>Header 2</th>
+	                    <th>Header 3</th>
+	                    <th class="actions">Ações</th>
+	                 </tr>
+	            </thead>
+	            <tbody>
+	 
+	                <tr>
+	                    <td>1001</td>
+	                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing</td>
+	                    <td>Jes</td>
+	                    <td>01/01/2015</td>
+	                    <td class="actions">
+	                        <a class="btn btn-success btn-xs" href="view.html">Visualizar</a>
+	                        <a class="btn btn-warning btn-xs" href="edit.html">Editar</a>
+	                        <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
+	                    </td>
+	                </tr>
+	 
+	            </tbody>
+	         </table>
+ 
+     	</div>
+     </div> <!-- /#list -->
+ 
+     <div id="bottom" class="row">
+     	<div class="col-md-1">
+	        <a href="add.html" class="btn btn-primary pull-right h2">Novo Item</a>
+	    </div>
+     </div> <!-- /#bottom -->
+ </div>  <!-- /#main -->
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+Modelagem do Banco
+
+1. Criar um modelo de dados através do DB Design ou do MySQL Workbench. (Formatos: png, jpg) - ok
+2. São apenas duas tabelas: tb_atividade e tb_status. - ok
+3. O script de criação deve estar disponível no diretório src, na raiz do projeto. - ok
+4. Campos das tabelas - ok
+   tb_atividade: id, nome, descricao, dt_inicio, dt_fim, status(FK) e situacao. 
+   tb_status: id, descricao. 
+5. Criar o banco de dados.
